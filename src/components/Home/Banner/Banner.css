@@ -1,3 +1,21 @@
+/* .banner {
+    height: 100vh;
+    width: 100%;
+    background-image: url("../../../images/banner/doctor-with-co-workers-analyzing-x-ray.jpg");
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+} */
+
 .banner img{
     width: 100%;
+}
+.title-1{
+    color: rgb(0, 4, 253);
+    font-size: 70px;
+}
+.title-2{
+    color:black;
 }
