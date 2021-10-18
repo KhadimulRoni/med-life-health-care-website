@@ -1,29 +1,36 @@
 [
-    {
+    {    
+        "id":1,
         "name":"Emergency Department",
         "img":"https://i.ibb.co/YR2zBVV/featured-image-6.jpg",
         "description":"An emergency room or emergency department is a medical treatment facility that specializes in acute medical care of patients. These patients are treated in an emergency room without an appointment."
      },
-     {
+     {   
+        "id":2,
         "name":"Orthopedic Department",
         "img":"https://i.ibb.co/xHGVZwk/featured-image-5.jpg",
-        "description":"An orthopaedic surgeon is a medical professional who specialises in diagnosing, treating, preventing and rehabilitating musculoskeletal injuries and diseases, both surgically and non-surgically, in people of all ages."
+        "description":"An orthopaedic surgeon is a medical professional who specialises in diagnosing, treating, preventing and rehabilitating musculoskeletal injuries and diseases, both surgically and non-surgically."
      },
-     {
+     {   
+        "id":3,
         "name":"Lab Test Department",
         "img":"https://i.ibb.co/SN61vjj/pricing-img-2.jpg",
         "description":"Generally, a clinical laboratory or medical laboratory is a place where tests are performed on clinical specimens (also known as a patient sample), such as blood or urine, and the results analyzed."
      },
-     {
+     {   
+        "id":4,
         "name":"Cardiology Department",
         "img":"https://i.ibb.co/zXkSK6v/featured-image-2.jpg",
-        "description":"Many patients who are referred to cardiologists are older people with a history of things like congestive heart failure, heart attacks or atrial fibrillation, otherwise known as irregular heart rhythms, Dr. Asfour says."
+        "description":"Many patients who are referred to cardiologists are older people with a history of things like congestive heart failure, heart attacks or atrial fibrillation, otherwise known as irregular heart rhythms."
      },
-     {
+     {   
+        "id":5,
         "name":"Neurology Department",
         "img":"https://i.ibb.co/SKrfvj8/featured-image-3.jpg",
         "description":"Neurologists diagnose, treat and manage disorders that affect the central nervous system (the brain and spinal cord) and the peripheral nervous system (nerves and muscles which activate movement."
-     },{
+     },
+     {   
+        "id":6,
         "name":"Dental Department",
         "img":"https://i.ibb.co/2vS6h6V/quang-tri-nguyen-Dn3-Rx-Yx-Xcwk-unsplash.jpg",
         "description":"A dental clinic is technically any place where dental services are rendered. However, most of the time when you hear this term used, you will find that a dental clinic has educational implications."
