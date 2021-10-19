@@ -1,11 +1,54 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Button, Col, Form, Row } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+import initializeAuthentication from '../Firebase/firebase.init';
+
+
+initializeAuthentication();
 
 const Registration = () => {
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const [user, setUser] =useState({});
+
+    const auth = getAuth();
+
+    const HandleEmailChange = (e) =>{
+        setEmail(e.target.value)
+    }
+    const HandlePasswordChange = (e) =>{
+        setPassword(e.target.value)
+        
+    }
+
+    const handleRegister = (e) =>{
+        e.preventDefault();
+
+        if(e.target.value<8){
+            console.log('try valid')
+        }
+        else{
+            setPassword(e.target.value);
+        }
+        createUserWithEmailAndPassword(auth, email, password,user)
+        .then( result => {
+            const user = result.user;
+            const {email, displayName} =result.user;
+                setEmail(email)
+            setUser(user,displayName);
+        })
+        .catch((error) =>{
+            console.log(error.message);
+        })
+
+    }
     return (
         <div className="container pt-5 w-75">
-            
-            <Form>
+            <div>
+                <h2 className="text-primary p-3">Registration for new account</h2>
+            </div>
+            <Form >
                 <Row>
                     <Col>
                     <Form.Control placeholder="First name" />
@@ -16,16 +59,16 @@ const Registration = () => {
                 </Row>
             </Form> 
 
-            <Form>
+            <Form onSubmit={handleRegister}>
                 <Row className="mb-3">
                     <Form.Group as={Col} controlId="formGridEmail">
                     <Form.Label>Email</Form.Label>
-                    <Form.Control type="email" placeholder="Enter email" />
+                    <Form.Control onChange={HandleEmailChange} type="email" placeholder="Enter email" />
                     </Form.Group>
 
                     <Form.Group as={Col} controlId="formGridPassword">
                     <Form.Label>Password</Form.Label>
-                    <Form.Control type="password" placeholder="Password" />
+                    <Form.Control onChange={HandlePasswordChange} type="password" placeholder="Password" />
                     </Form.Group>
                 </Row>
 
@@ -58,7 +101,7 @@ const Registration = () => {
                     <Form.Control />
                     </Form.Group>
                 </Row>
-
+                    <p>Already have an account ? <Link to="/login">Login</Link></p>
                 <Button variant="primary" type="submit">
                     Submit
                 </Button>
@@ -66,6 +109,7 @@ const Registration = () => {
 
         </div>
     );
+    
 };
 
 export default Registration;
