@@ -1,6 +1,7 @@
 import Button from '@restart/ui/esm/Button';
 import React from 'react';
 import { Col, Form, Row } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 
 const Login = () => {
@@ -26,6 +27,8 @@ const Login = () => {
                     <Form.Control type="password" placeholder="Password" />
                     </Col>
                 </Form.Group>
+
+                    <p>Don't have an account ? <Link to="/registration">Create an Account</Link></p>
 
                 <Form.Group as={Row} className="mb-3">
                     <Col sm={{  }}>

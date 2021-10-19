@@ -1,10 +1,9 @@
-import Button from '@restart/ui/esm/Button';
 import React from 'react';
-import { Col, Form, Row } from 'react-bootstrap';
+import { Button, Col, Form, Row } from 'react-bootstrap';
 
 const Registration = () => {
     return (
-        <div className="container pt-5">
+        <div className="container pt-5 w-75">
             
             <Form>
                 <Row>
@@ -59,10 +58,6 @@ const Registration = () => {
                     <Form.Control />
                     </Form.Group>
                 </Row>
-
-                <Form.Group className="mb-3" id="formGridCheckbox">
-                    <Form.Check type="checkbox" label="Check me out" />
-                </Form.Group>
 
                 <Button variant="primary" type="submit">
                     Submit
