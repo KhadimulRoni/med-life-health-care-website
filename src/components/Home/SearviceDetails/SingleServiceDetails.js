@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useParams } from 'react-router';
+import image from "../../../images/banner/adam-niescioruk-hWzrJsS8gwI-unsplash.jpg"
 
 const SingleServiceDetails = (props) => {
     const {serviceId} = useParams();
@@ -12,7 +13,10 @@ const SingleServiceDetails = (props) => {
     },[]);
     return (
         <div>
-            <h2>{serviceId}</h2>
+            <h2>Service ID: {serviceId}</h2>
+            <img src={image} alt="" />
+            
+
         </div>
     );
 };

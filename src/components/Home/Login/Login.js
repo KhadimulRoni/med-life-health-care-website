@@ -1,10 +1,12 @@
 import Button from '@restart/ui/esm/Button';
 import React from 'react';
 import { Col, Form, Row } from 'react-bootstrap';
+import useAuth from '../../../hooks/useAuth';
 
 const Login = () => {
+    const {signInUsingGoogle} = useAuth();
     return (
-        <div className="container p-5">
+        <div className="container p-5 w-50">
             
             <Form>
                 <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">
@@ -33,7 +35,7 @@ const Login = () => {
             </Form>
 
 
-            <button className="btn btn-info">Google Sign In</button>
+            <button onClick={signInUsingGoogle} className="btn btn-info">Google Sign In</button>
         </div>
     );
 };
