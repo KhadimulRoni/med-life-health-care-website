@@ -12,10 +12,8 @@
 .banner img{
     width: 100%;
 }
-.title-1{
-    color: rgb(0, 4, 253);
-    font-size: 70px;
-}
-.title-2{
-    color:black;
+.title{
+    background-color:rgba(0, 206, 209, 0.342);
+    padding: 5px;
+    border-radius: 20px;
 }
