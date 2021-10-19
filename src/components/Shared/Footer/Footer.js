@@ -24,7 +24,7 @@ const {user,logOut} = useAuth();
                         <Nav.Link as={Link} to="/services">Services</Nav.Link>
                         <Nav.Link as={Link} to="/doctors">Doctors</Nav.Link>
                         {user?.email ?
-                        <Button onClick={logOut} className="btn btn-light">Logout</Button> :
+                        <Button onClick={logOut} className="btn btn-light mb-3">Logout</Button> :
                         <Nav.Link as={Link} to="/login">Login</Nav.Link>}
                         <br />
                         <Navbar.Text className="bg-white px-3">

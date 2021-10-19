@@ -7,6 +7,7 @@ import Registration from './components/Home/Registration/Registration';
 import SingleServiceDetails from './components/Home/SearviceDetails/SingleServiceDetails';
 import Services from './components/Home/Services/Services';
 import NotFound from './components/NotFound/NotFound';
+import About from './components/Shared/About/About';
 import Footer from './components/Shared/Footer/Footer';
 import Header from './components/Shared/Header/Header';
 import AuthProvider from './context/AuthProvider';
@@ -21,7 +22,7 @@ function App() {
             <Switch>
                 <Route exact path="/">
                   <Home></Home>
-                  </Route>
+                </Route>
                 <Route path="/home">
                   <Home></Home>
                 </Route>
@@ -30,6 +31,9 @@ function App() {
                 </Route>
                 <Route path="/doctors">
                   <Doctors></Doctors>
+                </Route>
+                <Route path="/about">
+                  <About></About>
                 </Route>
                 <Route path="/details/:serviceId">
                   <SingleServiceDetails></SingleServiceDetails>

@@ -1,26 +1,50 @@
 [
     {
         "id":"dr1",
-        "img":"https://i.ibb.co/bsbxD63/dominguez-manuel-102575-200x200.jpg"
+        "img":"https://i.ibb.co/bsbxD63/dominguez-manuel-102575-200x200.jpg",
+        "name":"Dr. David",
+        "email":"DavidEMcNeill@jourrapide.com"
     },
     {
         "id":"dr2",
-        "img":"https://i.ibb.co/WsYbSKF/file-20191203-66986-im7o5.jpg"
+        "img":"https://i.ibb.co/WsYbSKF/file-20191203-66986-im7o5.jpg",
+        "name":"Dr. Stephanie",
+        "email":"StephanieJHylton@dayrep.com"
     },
     {
         "id":"dr3",
-        "img":"https://i.ibb.co/LNbjk9Q/Home-Doctors-600px.jpg"
+        "img":"https://i.ibb.co/LNbjk9Q/Home-Doctors-600px.jpg",
+        "name":"Dr. Cedric",
+        "email":"CedricKSavage@armyspy.com"
     },
     {
         "id":"dr4",
-        "img":"https://i.ibb.co/jGDws8r/Portrait-of-a-confident-doctor-working-at-a-hospital.jpg"
+        "img":"https://i.ibb.co/jGDws8r/Portrait-of-a-confident-doctor-working-at-a-hospital.jpg",
+        "name":"Dr. Clara",
+        "email":"ClaraJHammond@dayrep.com"
     },
     {
         "id":"dr5",
-        "img":"https://i.ibb.co/QmffcL5/Portrait-of-beautiful-mature-woman-doctor-holding-digital-tablet-and-looking-at-camera-Confident-fem.jpg"
+        "img":"https://i.ibb.co/QmffcL5/Portrait-of-beautiful-mature-woman-doctor-holding-digital-tablet-and-looking-at-camera-Confident-fem.jpg",
+        "name":"Dr. Elizabeth",
+        "email":"ElizabethTKelley@teleworm.us"
     },
     {
         "id":"dr6",
-        "img":"https://i.ibb.co/TLzXpjs/kazi-salahuddin-256x256.jpg"
+        "img":"https://i.ibb.co/TLzXpjs/kazi-salahuddin-256x256.jpg",
+        "name":"Dr. William",
+        "email":"WilliamDKayser@rhyta.com"
+    },
+    {
+        "id":"dr7",
+        "img":"https://i.ibb.co/9vHQND6/Portrait-of-middle-aged-asian-female-doctor-standing-in-hospital-corridor.jpg",
+        "name":"Dr. Beverly",
+        "email":"BeverlyJSnodgrass@teleworm.us"
+    },
+    {
+        "id":"dr8",
+        "img":"https://i.ibb.co/RCQkWmL/reznik-scott-156796-200x200.jpg",
+        "name":"Dr. Edward",
+        "email":"EdwardVCaswell@armyspy.com"
     }
 ]

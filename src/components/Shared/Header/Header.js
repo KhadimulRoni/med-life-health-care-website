@@ -17,11 +17,12 @@ const Header = () => {
                 <Nav.Link as={Link} to="/home">Home</Nav.Link>
                 <Nav.Link as={Link} to="/services">Services</Nav.Link>
                 <Nav.Link as={Link} to="/doctors">Doctors</Nav.Link>
+                <Nav.Link as={Link} to="/about">AboutUs</Nav.Link>
                 {user?.email ?
                     <Button onClick={logOut} className="btn btn-info">Logout</Button> :
                     <Nav.Link  as={Link} to="/login">Login</Nav.Link>}
-                <Navbar.Text>
-                    Signed in as: <a href="#login">{user?.displayName}</a>
+                <Navbar.Text className="px-2">
+                    Signed in as: <a href="#login" className="text-danger">{user?.displayName}</a>
                 </Navbar.Text>
                 </Navbar.Collapse>
                 </Container>
