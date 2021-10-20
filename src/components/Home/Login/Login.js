@@ -32,7 +32,7 @@ const Login = () => {
     const handleLogin = (e) =>{
         e.preventDefault();
 
-        if( password.length < 8){
+        if( password?.length < 8){
             setError('Password must be at least 8 character')
             return;
         }
@@ -43,7 +43,8 @@ const Login = () => {
         .then( result => {
             const user = result.user;
                 setEmail(email)
-            setUser(user)
+            setUser(user);
+            setError("")
         })
         .catch((error) =>{
             setError(error.message);
