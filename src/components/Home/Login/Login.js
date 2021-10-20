@@ -24,15 +24,17 @@ const Login = () => {
         setEmail(e.target.value)
     }
     const HandlePasswordChange = (e) =>{
-        setPassword(e.target.value)
+        const password = (e.target.value)
+        setPassword(password);
         
     }
 
     const handleLogin = (e) =>{
         e.preventDefault();
 
-        if(e.target.value<8){
-            console.log('try valid')
+        if( password.length < 8){
+            setError('Password must be at least 8 character')
+            return;
         }
         else{
             setPassword(e.target.value);
@@ -41,11 +43,7 @@ const Login = () => {
         .then( result => {
             const user = result.user;
                 setEmail(email)
-            setUser(user);
-            console.log(user)
-        })
-        .catch((error) =>{
-            setError(error.message);
+            setUser(user)
         })
 
     }
@@ -72,9 +70,9 @@ const Login = () => {
                     <Form.Control onChange={HandlePasswordChange} type="password" placeholder="Password" />
                     </Col>
                 </Form.Group>
-                    <p className="text-danger">{error}</p>
+                    
                     <p>Don't have an account ? <Link to="/registration">Create an Account</Link></p>
-
+                    <p className="text-danger p-3">{error}</p>
                 <Form.Group as={Row} className="mb-3">
                     <Col sm={{  }}>
                     <Button className="btn btn-primary" type="submit">Log in</Button>

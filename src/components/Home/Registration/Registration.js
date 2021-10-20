@@ -19,15 +19,18 @@ const Registration = () => {
         setEmail(e.target.value)
     }
     const HandlePasswordChange = (e) =>{
-        setPassword(e.target.value)
+        const password =e.target.value;
+        setPassword(password)
+        console.log(password.length)
         
     }
 
     const handleRegister = (e) =>{
         e.preventDefault();
 
-        if(e.target.value<8){
-            console.log('try valid')
+        if( password.length < 8){
+            setError('Password must be at least 8 character')
+            return;
         }
         else{
             setPassword(e.target.value);
@@ -36,19 +39,17 @@ const Registration = () => {
         .then( result => {
             const user = result.user;
                 setEmail(email);
-            setUser(user);
-            setError("")
+                setUser(user)
         })
-        .catch((error) =>{
-            setError(error.message);
-        })
+        // .catch((error) =>{
+        //     setError(error.message);
+        // })
 
     }
     return (
         <div className="container pt-5 w-75">
             <div>
                 <h2 className="text-primary p-3">Registration for new account</h2>
-                <p className="text-danger">{error}</p>
             </div>
             <Form >
                 <Row>
@@ -104,6 +105,7 @@ const Registration = () => {
                     </Form.Group>
                 </Row>
                     <p>Already have an account ? <Link to="/login">Login</Link></p>
+                    <p className="text-danger">{error}</p>
                 <Button variant="primary" type="submit">
                     Submit
                 </Button>
