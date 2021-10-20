@@ -45,6 +45,9 @@ const Login = () => {
                 setEmail(email)
             setUser(user)
         })
+        .catch((error) =>{
+            setError(error.message);
+        })
 
     }
     return (
