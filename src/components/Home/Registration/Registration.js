@@ -11,6 +11,7 @@ const Registration = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [user, setUser] =useState({});
+    const [error, setError] = useState("");
 
     const auth = getAuth();
 
@@ -34,12 +35,12 @@ const Registration = () => {
         createUserWithEmailAndPassword(auth, email, password,user)
         .then( result => {
             const user = result.user;
-            const {email, displayName} =result.user;
-                setEmail(email)
-            setUser(user,displayName);
+                setEmail(email);
+            setUser(user);
+            setError("")
         })
         .catch((error) =>{
-            console.log(error.message);
+            setError(error.message);
         })
 
     }
@@ -47,6 +48,7 @@ const Registration = () => {
         <div className="container pt-5 w-75">
             <div>
                 <h2 className="text-primary p-3">Registration for new account</h2>
+                <p className="text-danger">{error}</p>
             </div>
             <Form >
                 <Row>

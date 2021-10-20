@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 import Doctors from './components/Home/Doctors/Doctors';
 import Home from './components/Home/Home/Home';
+import PrivateRoute from './components/Home/Home/PrivateRoute/PrivateRoute';
 import Login from './components/Home/Login/Login';
 import Registration from './components/Home/Registration/Registration';
 import SingleServiceDetails from './components/Home/SearviceDetails/SingleServiceDetails';
@@ -35,9 +36,9 @@ function App() {
                 <Route path="/about">
                   <About></About>
                 </Route>
-                <Route path="/details/:serviceId">
+                <PrivateRoute path="/details/:serviceId">
                   <SingleServiceDetails></SingleServiceDetails>
-                </Route>
+                </PrivateRoute>
                 <Route path="/login">
                   <Login></Login>
                 </Route>

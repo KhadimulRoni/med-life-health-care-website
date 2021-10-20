@@ -16,6 +16,7 @@ const Login = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [user, setUser] =useState({});
+    const [error, setError] = useState("");
 
     const auth = getAuth();
 
@@ -39,12 +40,12 @@ const Login = () => {
         createUserWithEmailAndPassword(auth, email, password,user)
         .then( result => {
             const user = result.user;
-            const {email, displayName} =result.user;
                 setEmail(email)
-            setUser(user,displayName);
+            setUser(user);
+            console.log(user)
         })
         .catch((error) =>{
-            console.log(error.message);
+            setError(error.message);
         })
 
     }
@@ -71,7 +72,7 @@ const Login = () => {
                     <Form.Control onChange={HandlePasswordChange} type="password" placeholder="Password" />
                     </Col>
                 </Form.Group>
-
+                    <p className="text-danger">{error}</p>
                     <p>Don't have an account ? <Link to="/registration">Create an Account</Link></p>
 
                 <Form.Group as={Row} className="mb-3">
