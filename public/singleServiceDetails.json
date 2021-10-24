@@ -1,38 +1,47 @@
-[
-    {    
-        "id":1,
-        "name":"Emergency Department",
-        "img":"https://i.ibb.co/YR2zBVV/featured-image-6.jpg",
-        "description":"An emergency room or emergency department is a medical treatment facility that specializes in acute medical care of patients. These patients are treated in an emergency room without an appointment.An emergency room or emergency department is a medical treatment facility that specializes in acute medical care of patients. These patients are treated in an emergency room without an appointment. The patients get to emergency rooms by themselves or by ambulance.Emergency medicine doctors stabilize and treat patients who are experiencing acute health problems or traumatic injuries. Some patients can be treated and released from the emergency room, and others need to be admitted to the hospital or further assessed by other specialists."
-     },
-     {   
-        "id":2,
-        "name":"Orthopedic Department",
-        "img":"https://i.ibb.co/xHGVZwk/featured-image-5.jpg",
-        "description":"An orthopaedic surgeon is a medical professional who specialises in diagnosing, treating, preventing and rehabilitating musculoskeletal injuries and diseases, both surgically and non-surgically.Orthopaedic doctors diagnose injuries mostly triggered by physical activities. They also help manage conditions like arthritis that can progressively worsen over time.Orthopaedic surgery refers to surgical intervention in the case of diseases or injuries concerning the musculoskeletal system. After proper diagnoses and consultation, orthopaedic surgeons treat several conditions that affect the bones, joints, ligaments, nerves and muscles. They help patients affected with mobility disorders recover and lead a more fulfilling life."
-     },
-     {   
-        "id":3,
-        "name":"Lab Test Department",
-        "img":"https://i.ibb.co/SN61vjj/pricing-img-2.jpg",
-        "description":"Generally, a clinical laboratory or medical laboratory is a place where tests are performed on clinical specimens (also known as a patient sample), such as blood or urine, and the results analyzed.The four main departments in the majority of clinical pathology laboratories are: 1) clinical chemistry, 2) microbiology, 3) hematology and hemostasis, and 4) transfusion services (blood bank). Clinical Chemistry - Chemistry is usually the largest and most automated of all laboratory departments.Courses in Medical Laboratory Science are offered under five disciplines: MLS Clinical Chemistry, MLS Haematology, MLS Histopathology, MLS Medical Microbiology, MLS Medical Parasitology/ Entomology and MLS Immunology/Immunochemistry.A medical procedure that involves testing a sample of blood, urine, or other substance from the body. Laboratory tests can help determine a diagnosis, plan treatment, check to see if treatment is working, or monitor the disease over time."
-     },
-     {   
-        "id":4,
-        "name":"Cardiology Department",
-        "img":"https://i.ibb.co/zXkSK6v/featured-image-2.jpg",
-        "description":"Many patients who are referred to cardiologists are older people with a history of things like congestive heart failure, heart attacks or atrial fibrillation, otherwise known as irregular heart rhythms.Cardiologists are doctors who diagnose, assess and treat patients with diseases and defects of the heart and blood vessels (the cardiovascular system). This page provides useful information on the nature of the work, the common procedures/interventions, sub-specialties and other roles that may interest you.A doctor who specializes in issues of the heart is called a cardiologist. According to the American College of Cardiology, cardiologists are trained to find, treat and help prevent diseases that attack the blood vessels and the heart."
-     },
-     {   
-        "id":5,
-        "name":"Neurology Department",
-        "img":"https://i.ibb.co/SKrfvj8/featured-image-3.jpg",
-        "description":"Neurologists diagnose, treat and manage disorders that affect the central nervous system (the brain and spinal cord) and the peripheral nervous system (nerves and muscles which activate movement.Neurologists are specialists who can assess, diagnose, manage, and treat conditions that affect your nervous system. Your doctor might refer you to a neurologist if you're having symptoms that could be caused by a neurological condition, such as pain, memory loss, trouble with balance, or tremors.A neurologist treats disorders of the central and peripheral nervous system, including the brain, spinal cord, cranial nerves, peripheral nerves, nerve roots, autonomic nervous system, neuromuscular junction, and muscles."
-     },
-     {   
-        "id":6,
-        "name":"Dental Department",
-        "img":"https://i.ibb.co/2vS6h6V/quang-tri-nguyen-Dn3-Rx-Yx-Xcwk-unsplash.jpg",
-        "description":"A dental clinic is technically any place where dental services are rendered. However, most of the time when you hear this term used, you will find that a dental clinic has educational implications.How Much Does a Dentist Make? Dentists made a median salary of $155,600 in 2019. The best-paid 25 percent made $208,000 that year, while the lowest-paid 25 percent made $113,060.A general dentist is your primary care dental provider. This dentist diagnoses, treats, and manages your overall oral health care needs, including gum care, root canals, fillings, crowns, veneers, bridges, and preventive education. ... Additional post-graduate training is required to become a dental specialist."
-     }
-]
+
+{  
+   "service":[
+      {    
+         "id":1,
+         "doctors":10,
+         "name":"Emergency Department",
+         "img":"https://i.ibb.co/YR2zBVV/featured-image-6.jpg",
+         "description":"An emergency room or emergency department is a medical treatment facility that specializes in acute medical care of patients. These patients are treated in an emergency room without an appointment.An emergency room or emergency department is a medical treatment facility that specializes in acute medical care of patients. These patients are treated in an emergency room without an appointment. The patients get to emergency rooms by themselves or by ambulance.Emergency medicine doctors stabilize and treat patients who are experiencing acute health problems or traumatic injuries. Some patients can be treated and released from the emergency room, and others need to be admitted to the hospital or further assessed by other specialists."
+      },
+      {   
+         "id":2,
+         "doctors":5,
+         "name":"Orthopedic Department",
+         "img":"https://i.ibb.co/xHGVZwk/featured-image-5.jpg",
+         "description":"An orthopaedic surgeon is a medical professional who specialises in diagnosing, treating, preventing and rehabilitating musculoskeletal injuries and diseases, both surgically and non-surgically.Orthopaedic doctors diagnose injuries mostly triggered by physical activities. They also help manage conditions like arthritis that can progressively worsen over time.Orthopaedic surgery refers to surgical intervention in the case of diseases or injuries concerning the musculoskeletal system. After proper diagnoses and consultation, orthopaedic surgeons treat several conditions that affect the bones, joints, ligaments, nerves and muscles. They help patients affected with mobility disorders recover and lead a more fulfilling life."
+      },
+      {   
+         "id":3,
+         "doctors":8,
+         "name":"Lab Test Department",
+         "img":"https://i.ibb.co/SN61vjj/pricing-img-2.jpg",
+         "description":"Generally, a clinical laboratory or medical laboratory is a place where tests are performed on clinical specimens (also known as a patient sample), such as blood or urine, and the results analyzed.The four main departments in the majority of clinical pathology laboratories are: 1) clinical chemistry, 2) microbiology, 3) hematology and hemostasis, and 4) transfusion services (blood bank). Clinical Chemistry - Chemistry is usually the largest and most automated of all laboratory departments.Courses in Medical Laboratory Science are offered under five disciplines: MLS Clinical Chemistry, MLS Haematology, MLS Histopathology, MLS Medical Microbiology, MLS Medical Parasitology/ Entomology and MLS Immunology/Immunochemistry.A medical procedure that involves testing a sample of blood, urine, or other substance from the body. Laboratory tests can help determine a diagnosis, plan treatment, check to see if treatment is working, or monitor the disease over time."
+      },
+      {   
+         "id":4,
+         "doctors":6,
+         "name":"Cardiology Department",
+         "img":"https://i.ibb.co/zXkSK6v/featured-image-2.jpg",
+         "description":"Many patients who are referred to cardiologists are older people with a history of things like congestive heart failure, heart attacks or atrial fibrillation, otherwise known as irregular heart rhythms.Cardiologists are doctors who diagnose, assess and treat patients with diseases and defects of the heart and blood vessels (the cardiovascular system). This page provides useful information on the nature of the work, the common procedures/interventions, sub-specialties and other roles that may interest you.A doctor who specializes in issues of the heart is called a cardiologist. According to the American College of Cardiology, cardiologists are trained to find, treat and help prevent diseases that attack the blood vessels and the heart."
+      },
+      {   
+         "id":5,
+         "doctors":4,
+         "name":"Neurology Department",
+         "img":"https://i.ibb.co/SKrfvj8/featured-image-3.jpg",
+         "description":"Neurologists diagnose, treat and manage disorders that affect the central nervous system (the brain and spinal cord) and the peripheral nervous system (nerves and muscles which activate movement.Neurologists are specialists who can assess, diagnose, manage, and treat conditions that affect your nervous system. Your doctor might refer you to a neurologist if you're having symptoms that could be caused by a neurological condition, such as pain, memory loss, trouble with balance, or tremors.A neurologist treats disorders of the central and peripheral nervous system, including the brain, spinal cord, cranial nerves, peripheral nerves, nerve roots, autonomic nervous system, neuromuscular junction, and muscles."
+      },
+      {   
+         "id":6,
+         "doctors":5,
+         "name":"Dental Department",
+         "img":"https://i.ibb.co/2vS6h6V/quang-tri-nguyen-Dn3-Rx-Yx-Xcwk-unsplash.jpg",
+         "description":"A dental clinic is technically any place where dental services are rendered. However, most of the time when you hear this term used, you will find that a dental clinic has educational implications.How Much Does a Dentist Make? Dentists made a median salary of $155,600 in 2019. The best-paid 25 percent made $208,000 that year, while the lowest-paid 25 percent made $113,060.A general dentist is your primary care dental provider. This dentist diagnoses, treats, and manages your overall oral health care needs, including gum care, root canals, fillings, crowns, veneers, bridges, and preventive education. ... Additional post-graduate training is required to become a dental specialist."
+      }
+   ]
+}

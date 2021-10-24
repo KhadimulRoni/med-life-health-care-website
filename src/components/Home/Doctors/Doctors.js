@@ -20,9 +20,8 @@ const Doctors = () => {
             <div className="row m-0 py-5">
                 {
                     doctors?.map(doctor=><div
-                    key={doctor.id} className="col-md-3 col-sm-12 doctor d-flex py-3">
-
-
+                    key={doctor.id} 
+                    className="col-md-3 col-sm-12 doctor d-flex py-3">
                         <Card style={{ width: '18rem' }}>
                         <Card.Img variant="top" src={doctor.img} />
                         <Card.Body>

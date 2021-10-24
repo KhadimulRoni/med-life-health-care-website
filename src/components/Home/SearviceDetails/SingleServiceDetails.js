@@ -1,34 +1,39 @@
 import { useEffect, useState } from 'react';
-import {useParams} from 'react-router-dom';
-import image from "../../../images/banner/adam-niescioruk-hWzrJsS8gwI-unsplash.jpg"
+import { useParams } from "react-router-dom";
+import './singleServiceDetails.css'
+
+
 
 const SingleServiceDetails = () => {
-    let {serviceId} = useParams();
+    let {id} = useParams(); 
 
     const [singleDetails, setSingleDetails] = useState([]);
-
-    const [serviceDetail, setServiceDetail] = useState({});
+    const [singleService, setSingleService] = useState({});
+    console.log(singleService)
 
     useEffect( ()=>{
         fetch('/singleServiceDetails.json')
         .then(res => res.json())
-        .then(data => setSingleDetails(data))
+        .then(data => setSingleDetails(data?.service));
+        
     },[])
 
-    useEffect(()=>{
-        const singleService = singleDetails.find(data => data?.id === serviceId)
-        console.log(singleService)
+    useEffect( ()=>{
+        const foundService = singleDetails.find(service => service?.id == id)
+        setSingleService(foundService)
 
-    },[ singleDetails ]);
+    },[singleDetails,id])
 
 
     return (
-        <div>
-            <h2>Service ID: {serviceId}</h2>
-            <h1 className="text-warning">Page is under construction</h1>
-            <img style={{width:"100%"}} src={image} alt="" />
-            
-
+        <div className="single">
+            <div className="container p-5">
+                <img src={singleService?.img} alt="" />
+                {/* <h2>Service ID: {id}</h2> */}
+                <h2 className="text-warning p-3">{singleService?.name}</h2>
+                <h4 className="text-info">Available Doctors : {singleService?.doctors}</h4>
+                <p className="p-3 text-light">{singleService?.description}</p>
+            </div>
         </div>
     );
 };

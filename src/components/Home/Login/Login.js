@@ -41,7 +41,7 @@ const Login = () => {
         }
         createUserWithEmailAndPassword(auth, email, password,user)
         .then( result => {
-            const user = result.user;
+            const user = result?.user;
                 setEmail(email)
             setUser(user);
             setError("")
